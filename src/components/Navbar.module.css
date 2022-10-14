@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Gluon';
+    src: local('./font/Gluon Bold'), local('./font/Gluon-Bold'),
+        url('./font/Gluon-Bold.woff2') format('woff2'),
+        url('./font/Gluon-Bold.woff') format('woff'),
+        url('./font/Gluon-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Solomon Sans Med';
+    src: url('./font/SolomonSans-Medium.eot');
+    src: local('./font/Solomon Sans Medium'), local('./font/SolomonSans-Medium'),
+        url('./font/SolomonSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./font/SolomonSans-Medium.woff2') format('woff2'),
+        url('./font/SolomonSans-Medium.woff') format('woff'),
+        url('./font/SolomonSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.navbar{
+    position: fixed;
+    bottom: 0;
+    height: 8vh;
+    font-size: 1.27rem;
+    font-family: 'Gluon';
+    font-weight: 500;
+    width: 100vw;
+    background-color: black;
+    color: #CD8786;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.navbar li{
+    cursor: pointer;
+    margin: auto;
+    transition: all 0.4s;
+}
+.navbar li:hover{
+    color: rgb(138, 58, 151);
+}
+.navbar ul{
+    margin-right: 1rem;
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 0 0.3rem 0.3rem;
+    margin: 0.3rem;  
+    border: 0.08rem solid;
+    border-bottom: 0.18rem solid #CD8786;
+    border-right: 0.18rem solid #CD8786;
+    border-radius: 0.25rem;
+}
+.navbar ul li:hover{
+    border: 0.08rem solid rgb(138, 58, 151);
+    border-bottom: 0.18rem solid ;
+    border-right: 0.18rem solid ;
+}
